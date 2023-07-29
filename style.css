@@ -51,7 +51,7 @@ button {
 /* Header */
 
 .header {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: var(--primary-dark);
   color: var(--secondary-light);
 }
@@ -81,7 +81,7 @@ button {
   margin-right: 0.5rem;
   background-color: var(--secondary-light);
   color: #191919;
-  border: 2px solid var(--primary-dark);
+  border: 2px solid transparent;
 
 }
 

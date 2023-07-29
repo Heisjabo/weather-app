@@ -7,7 +7,6 @@ searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   if (searchInput.value === "") return;
   fetchWeather(searchInput.value);
-//   displayResults(fetchWeather(searchInput.value));
 });
 
 const displayResults = (data) => {
@@ -30,13 +29,12 @@ const displayResults = (data) => {
 }
 
 const fetchWeather = async (city) => {
-  const endpoint = `http://api.weatherapi.com/v1/current.json?key=303c4398ea96457b81f105006232907&q=${city}`;
+  const endpoint = `https://api.weatherapi.com/v1/current.json?key=303c4398ea96457b81f105006232907&q=${city}`;
   try {
     const response = await fetch(endpoint, { mode: "cors" });
     if (!response.ok) throw new Error(`City ${city} not found`);
     const data = await response.json();
     displayResults(data);
-    console.log(data);
   } catch (error) {
     alert(error);
     return null;
