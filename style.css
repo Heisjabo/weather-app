@@ -21,7 +21,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
-  background-color: var(--secondary-dark);
+  /* background-color: var(--secondary-dark); */
+  background: url('./images/sky-img.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
